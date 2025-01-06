@@ -19,7 +19,7 @@ int main()
                 cin.ignore(numeric_limits<streamsize>::max(), '\n');
                 cout << "You entered a letter or something else, but not a number, try again" << endl;
             }
-            else if (rounds_number == 0 || rounds_number <= -1) { cout << "Your number is 0 or less than -1, try again" << endl; }
+            else if (rounds_number == 0 || rounds_number < -1) { cout << "Your number is 0 or less than -1, try again" << endl; }
             else { break; }//проверки ввода^
         }
         if (rounds_number == -1) { cout << "Thank you for playing" << endl; break; } //выход из основного цикла
